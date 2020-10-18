@@ -1,9 +1,15 @@
+html, body, #root {
+    height: 100vh;
+    margin:0;
+}
+
 :root {
     --color-background: #faecfa;
+    --color-background-two: #ebd9eb;
     --color-primary: #A51860;
     --color-text-title: #552C8A;
     --color-text-focused: #B13F7D;
-  
+    
     font-size: 60%;
 }
 
@@ -13,31 +19,17 @@
     box-sizing: border-box;
 }
 
-html, body, #root {
-    height: 100vh;
-}
-
 body {
     background: var(--color-background);
 }
 
-#root {
-    display: flex;
-    flex: 1;
-}
-
 body,
-input,
 button {
     font: 500 1.6rem Roboto;
-}
-
-.app-content {
-    width: 100vw;
 }
 
 @media (min-width: 700px) {
     :root {
         font-size: 62.5%;
     }
-}
+} 

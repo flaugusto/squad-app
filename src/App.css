@@ -1,0 +1,55 @@
+#app header {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 auto;
+}
+
+#app section {
+    flex: 1 1 auto;
+}
+
+#app footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background-two);
+    flex: 0 1 4.5rem;
+}
+
+#app {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+#app-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app-info .venturus-logo {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem 1.2rem 0.5rem 4rem;
+}
+
+/* #app-info .app-title {
+    margin-left: 1.2rem;
+} */
+
+#user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-info .user-avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 4rem;
+    margin-left: 0.8rem;
+}
