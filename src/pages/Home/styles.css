@@ -1,7 +1,7 @@
 .card {
     background-color: #FFFFFF;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
+    border-radius: 10px;
     width: auto;
     padding: 2rem;
 }
@@ -21,14 +21,15 @@
     ;
 }
 
-.my-teams {
+#my-teams {
     grid-area: myTeams;
 }
 
-.top-5 {
+#top-5 {
     grid-area: top5;
 }
 
-.most-picked {
-    grid-area: mostPicked
+#most-picked {
+    grid-area: mostPicked;
+    background-image: linear-gradient(var(--color-secondary-light),var(--color-secondary-dark));
 }

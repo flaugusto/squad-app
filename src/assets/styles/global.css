@@ -4,9 +4,13 @@ html, body, #root {
 }
 
 :root {
-    --color-background: #faecfa;
+    --color-background: #fcf7fc;
     --color-background-two: #ebd9eb;
     --color-primary: #A51860;
+    --color-primary-light: #C00E4F;
+    --color-primary-dark: #8B206F;
+    --color-secondary-light: #B93D7C;
+    --color-secondary-dark: #662E87;
     --color-text-title: #552C8A;
     --color-text-focused: #B13F7D;
     

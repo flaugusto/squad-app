@@ -1,5 +1,5 @@
 #app header {
-    background-color: var(--color-primary);
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
