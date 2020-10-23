@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Home from './pages/Home';
+import Routes from './routes';
 
 import logo from './assets/images/logo.png';
 
@@ -27,7 +27,7 @@ function App() {
                     />
                 </div>
             </header>
-            <Home></Home>
+            <Routes></Routes>
             <footer>
                 <span>2020 - All rights reserved</span>
             </footer>

@@ -1,50 +1,50 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPen, faTrash, faShareAlt } from '@fortawesome/free-solid-svg-icons'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import Team from '../../components/Team';
+import Card from '../../components/Card';
+
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 import './styles.css';
 
 function Home() {
+    // const [teams, setTeams] = useState([]);
+
     return (
         <section>
             <div className="grid-container">
-                <div id="my-teams" className="card">
-                    <h1 className="header">My Teams</h1>
-                    <div className="body">
-                        <table className="team">
-                            <tr>
-                                <td><span id="name">Barcelona</span></td>
-                                <td>
-                                    <div id="description">
-                                        <span>Barcelona Squad</span>
-                                        <div className="buttons-container">
-                                            <a href="#" className="delete">
-                                                <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
-                                            </a>
-                                            <a href="#" className="share">
-                                                <FontAwesomeIcon icon={faShareAlt}></FontAwesomeIcon>
-                                            </a>
-                                            <a href="#" className="edit">
-                                                <FontAwesomeIcon icon={faPen}></FontAwesomeIcon>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+                <Card name="my-teams">
+                    <div className="header">
+                        <h1>My teams</h1>
+                        <Link to="/newTeam" className="add-button">
+                            <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
+                        </Link>
                     </div>
-                </div>
-                <div id="top-5" className="card">
-                    <h1 className="header">Top 5</h1>
                     <div className="body">
-                        <p className="text">With supporting text below as a natural lead-in to additional content.</p>
+                        <Team 
+                            name="Barcelona"
+                            desc="Barcelona Squad"
+                        />
+                        <Team 
+                            name="Real"
+                            desc="Real Madrid Squad"
+                        />
                     </div>
-                </div>
-                <div id="most-picked" className="card">
+                </Card>
+                <Card name="top-5">
+                    <div className="header">
+                        <h1>Top 5</h1>
+                    </div>
+                    <div className="body">
+                        <p className="text"> A list of teams here.</p>
+                    </div>
+                </Card>
+                <Card name="most-picked">
                     <div className="body">
                     </div>
-                </div>
+                </Card>
             </div>
         </section>
     )
