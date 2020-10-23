@@ -1,6 +1,6 @@
 # Squad App
 
-This is a Squad Management Tool, this is work in progress...
+A Squad Management Tool, work in progress...
 
 You must have [Node.js](https://nodejs.org/en/) installed to run this project.
 
